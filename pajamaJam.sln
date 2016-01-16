@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pajamaJam.CSharp.Plugins", "pajamaJam.CSharp.Plugins.csproj", "{C6097070-9DA8-9907-22AA-35B3C1477189}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pajamaJam.CSharp", "pajamaJam.CSharp.csproj", "{2AFD353C-2E4C-DB74-7CC5-9EBEA49F3C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pajamaJam.CSharp.Editor", "pajamaJam.CSharp.Editor.csproj", "{CC779129-AD6A-B060-8824-2597EDE6CA25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6097070-9DA8-9907-22AA-35B3C1477189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6097070-9DA8-9907-22AA-35B3C1477189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6097070-9DA8-9907-22AA-35B3C1477189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6097070-9DA8-9907-22AA-35B3C1477189}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2AFD353C-2E4C-DB74-7CC5-9EBEA49F3C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AFD353C-2E4C-DB74-7CC5-9EBEA49F3C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AFD353C-2E4C-DB74-7CC5-9EBEA49F3C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AFD353C-2E4C-DB74-7CC5-9EBEA49F3C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC779129-AD6A-B060-8824-2597EDE6CA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC779129-AD6A-B060-8824-2597EDE6CA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC779129-AD6A-B060-8824-2597EDE6CA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC779129-AD6A-B060-8824-2597EDE6CA25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
