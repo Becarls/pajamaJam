@@ -5,16 +5,15 @@ public class  shooting : MonoBehaviour {
 
     public GameObject chord1;
     public GameObject chord2;
-     public GameObject chord3;
-     public GameObject chord4;
-     public GameObject chord5;
-     public GameObject chord6;
-     public GameObject chord7;
+    public GameObject chord3;
+    public GameObject chord4;
+    public GameObject chord5;
+    public GameObject chord6;
+    public GameObject chord7;
     public float timestamp;
     public float delay;
     public float offset = .5f;
     private float tme;
-
 	void Start() {
         tme = delay;
     }

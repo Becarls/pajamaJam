@@ -26,7 +26,7 @@ public class playerMove : MonoBehaviour {
 			}
 
 			if(Input.GetKeyUp(KeyCode.RightArrow)){
-				if (playerPos == 4) {
+				if (playerPos == 3) {
 				}else{
 				playerPos++;
 				this.transform.Translate(new Vector3(0, 0, 1 * movementTime * movementSpeed));
