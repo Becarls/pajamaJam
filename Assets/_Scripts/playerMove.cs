@@ -17,12 +17,12 @@ public class playerMove : MonoBehaviour {
 		}else{
 			if(Input.GetKey(KeyCode.LeftArrow)){
 				playerPos--;
-				this.transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
+				this.transform.Translate(new Vector3(0, 0, -1 * Time.deltaTime * movementSpeed));
 			}
 
 			if(Input.GetKey(KeyCode.RightArrow)){
 				playerPos++;
-				this.transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
+				this.transform.Translate(new Vector3(0, 0, 1 * Time.deltaTime * movementSpeed));
 			}
 		}
 	}
