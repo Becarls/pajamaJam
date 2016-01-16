@@ -14,7 +14,7 @@ public class Chords : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if(other.tag == "EnemyChord") {
            // explosion.Play();
-            Destroy(other);
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
