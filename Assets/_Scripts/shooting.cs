@@ -22,7 +22,7 @@ public class  shooting : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Q)) {  
             if (tme >= delay) {
-                Instantiate(chord1.transform, transform.position, Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord1.transform, transform.position , Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
