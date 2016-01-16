@@ -21,15 +21,15 @@ public class playerMove : MonoBehaviour {
 				if (playerPos == 0) {
 				}else{
 					playerPos--;
-					this.transform.Translate(Vector3.left * movementTime * movementSpeed);
+					this.transform.Translate(new Vector3(0,0,-1 * movementTime * movementSpeed));
 				}
 			}
 
 			if(Input.GetKeyUp(KeyCode.RightArrow)){
-				if (playerPos == 4) {
+				if (playerPos == 3) {
 				}else{
 				playerPos++;
-				this.transform.Translate(Vector3.right * movementTime * movementSpeed);
+				this.transform.Translate(new Vector3(0, 0, 1 * movementTime * movementSpeed));
 				}
 			}
 		}
