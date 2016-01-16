@@ -12,6 +12,7 @@ public class  shooting : MonoBehaviour {
      public GameObject chord7;
     public float timestamp;
     public float delay;
+    public float offset = .5f;
     private float tme;
 
 	void Start() {
@@ -22,43 +23,43 @@ public class  shooting : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Q)) {  
             if (tme >= delay) {
-                Instantiate(chord1.transform, transform.position + new Vector3(-.5f,0f,0f) , Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord1.transform, transform.position + new Vector3(offset,0f,0f) , Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.W)) {
             if (tme >= delay) {
-                Instantiate(chord2.transform, transform.position + new Vector3(-.5f, 0f, 0f), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord2.transform, transform.position + new Vector3(offset, 0f, 0f), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.E)) {
             if (tme >= delay) {
-                Instantiate(chord3.transform, transform.position + new Vector3(-.5f, 0f, 0f), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord3.transform, transform.position + new Vector3(offset, 0f, 0f), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.R)) {
             if (tme >= delay) {
-                Instantiate(chord4.transform, transform.position + new Vector3(-.5f, 0f, 0f), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord4.transform, transform.position + new Vector3(offset, 0f, 0f), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.D)) {
             if (tme >= delay) {
-                Instantiate(chord5.transform, transform.position + new Vector3(-.5f, 0, 0), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord5.transform, transform.position + new Vector3(offset, 0, 0), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.F)) {
             if (tme >= delay) {
-                Instantiate(chord6.transform, transform.position + new Vector3(-.5f, 0, 0), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord6.transform, transform.position + new Vector3(offset, 0, 0), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
         else if (Input.GetKeyDown(KeyCode.Space)) {
             if (tme >= delay) {
-                Instantiate(chord7.transform, transform.position + new Vector3(-.5f, 0, 0), Quaternion.Euler(0, 0, 90f));
+                Instantiate(chord7.transform, transform.position + new Vector3(offset, 0, 0), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
             }
         }
