@@ -5,24 +5,32 @@ public class playerMove : MonoBehaviour {
 	public Rigidbody rigidCube;
 	public int playerPos = 1;
 	public float movementSpeed = 2;
+	public float movementTime = 2;
 	public bool isMoving = false;
-	// Use this for initialization
+
+	public int roadSize = 2000;
+
 	void Start () {
 		rigidCube = this.GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
 	void Update () {
 		if (isMoving) {
 		}else{
-			if(Input.GetKey(KeyCode.LeftArrow)){
-				playerPos--;
-				this.transform.Translate(new Vector3(0, 0, -1 * Time.deltaTime * movementSpeed));
+			if(Input.GetKeyUp(KeyCode.LeftArrow)){
+				if (playerPos == 0) {
+				}else{
+					playerPos--;
+					this.transform.Translate(Vector3.left * movementTime * movementSpeed);
+				}
 			}
 
-			if(Input.GetKey(KeyCode.RightArrow)){
+			if(Input.GetKeyUp(KeyCode.RightArrow)){
+				if (playerPos == 4) {
+				}else{
 				playerPos++;
-				this.transform.Translate(new Vector3(0, 0, 1 * Time.deltaTime * movementSpeed));
+				this.transform.Translate(Vector3.right * movementTime * movementSpeed);
+				}
 			}
 		}
 	}
