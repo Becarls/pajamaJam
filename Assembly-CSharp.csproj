@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\LoadOnClick.cs" />
      <Compile Include="Assets\Scripts\chords.cs" />
      <Compile Include="Assets\Scripts\destroyByBoundary.cs" />
+     <Compile Include="Assets\Scripts\floorMove.cs" />
      <Compile Include="Assets\Scripts\playerMove.cs" />
      <Compile Include="Assets\Scripts\shooting.cs" />
      <Compile Include="Assets\Scripts\spawnerLogic.cs" />
