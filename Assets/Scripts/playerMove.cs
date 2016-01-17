@@ -12,6 +12,7 @@ public class playerMove : MonoBehaviour {
 
 	void Start () {
 		rigidCube = this.GetComponent<Rigidbody>();
+        gameObject.GetComponent<AudioSource>().Play();
 	}
 
 	void Update () {

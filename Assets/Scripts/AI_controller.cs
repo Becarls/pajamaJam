@@ -100,9 +100,13 @@ public class AI_controller : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         
         if(other.tag == tag_strong) {
+            Destroy(other);
+            gameObject.GetComponent<AudioSource>().Play();
             health -= 3;
         }
         else if(other.tag == tag_resist) {
+            Destroy(other);
+            gameObject.GetComponent<AudioSource>().Play();
             health -= 1;
         }
         else if(other.tag == "Chord1" ||
@@ -111,10 +115,13 @@ public class AI_controller : MonoBehaviour {
                 other.tag == "Chord4" ||
                 other.tag == "Chord5" ||
                 other.tag == "Chord6" ||
-                other.tag == "Chord7") { 
+                other.tag == "Chord7") {
+            Destroy(other);
+            gameObject.GetComponent<AudioSource>().Play();
             health -= 2;
         }
         else if (other.tag == "EnemyChord") {
         }
     }
+
 }

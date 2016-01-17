@@ -27,7 +27,7 @@ public class  shooting : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)) {  
+        if (Input.GetKeyDown(KeyCode.Space)) {  
             if (tme >= delay) {
                 clip1.Play();
                 Instantiate(chord1.transform, transform.position + new Vector3(offset,0f,0f) , Quaternion.Euler(0, 0, 90f));
@@ -69,12 +69,12 @@ public class  shooting : MonoBehaviour {
                 tme = 0;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Space)) {
+        else if (Input.GetKeyDown(KeyCode.Q)) {
             if (tme >= delay) {
                 clip7.Play();
                 Instantiate(chord7.transform, transform.position + new Vector3(offset, 0, 0), Quaternion.Euler(0, 0, 90f));
                 tme = 0;
-                clip7.
+                clip7.Play();
             }
         }
         tme += Time.deltaTime;
