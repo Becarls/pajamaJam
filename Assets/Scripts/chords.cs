@@ -10,7 +10,8 @@ public class chords : MonoBehaviour {
         GetComponent<Rigidbody>().AddForce(new Vector3(speed * 10f, 0, 0));
         Destroy(gameObject, lifespan);
 	}
-	
+
+
     void OnTriggerEnter(Collider other) {
         if(other.tag == "EnemyChord") {
            // explosion.Play();
