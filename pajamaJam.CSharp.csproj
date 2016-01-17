@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\shooting.cs" />
     <Compile Include="Assets\Scripts\spawnerLogic.cs" />
     <Compile Include="Assets\Scripts\worldSpawner.cs" />
+    <Compile Include="Assets\bossBattle.cs" />
     <Compile Include="Assets\despawner.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
