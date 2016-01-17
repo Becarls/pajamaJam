@@ -13,6 +13,7 @@ public class AI_controller : MonoBehaviour {
     public GameObject enemyChord;
     public float movement_prob = 40f;
     public int weakness;
+    public int type;
 
     private string tag_resist;
     private string tag_strong;
@@ -25,36 +26,42 @@ public class AI_controller : MonoBehaviour {
         rand_val = Random.value;
         weakness = (int)Mathf.Ceil((100f * rand_val) % 7f);
         GetComponent<Rigidbody>().AddForce(new Vector3(-speed, 0, 0));
-        switch (weakness) {
-            case 1:
-                tag_strong = "Chord1";
-                tag_resist = "Chord2";
-                break;
-            case 2:
-                tag_strong = "Chord2";
-                tag_resist = "Chord3";
-                break;
-            case 3:
-                tag_strong = "Chord3";
-                tag_resist = "Chord4";
-                break;
-            case 4:
-                tag_strong = "Chord4";
-                tag_resist = "Chord5";
-                break;
-            case 5:
-                tag_strong = "Chord5";
-                tag_resist = "Chord6";
-                break;
-            case 6:
-                tag_strong = "Chord6";
-                tag_resist = "Chord7";
-                break;
-            case 7:
-                tag_strong = "Chord7";
-                tag_resist = "Chord1";
-                break;
+        if(gameObject.transform.position.z == -5) {
+            //enemyPos = 4;
         }
+        else if (gameObject.transform.position.z == -5) {
+            //enemyPos = 4;
+        }
+        /* switch (weakness) {
+             case 1:
+                 tag_strong = "Chord1";
+                 tag_resist = "Chord2";
+                 break;
+             case 2:
+                 tag_strong = "Chord2";
+                 tag_resist = "Chord3";
+                 break;
+             case 3:
+                 tag_strong = "Chord3";
+                 tag_resist = "Chord4";
+                 break;
+             case 4:
+                 tag_strong = "Chord4";
+                 tag_resist = "Chord5";
+                 break;
+             case 5:
+                 tag_strong = "Chord5";
+                 tag_resist = "Chord6";
+                 break;
+             case 6:
+                 tag_strong = "Chord6";
+                 tag_resist = "Chord7";
+                 break;
+             case 7:
+                 tag_strong = "Chord7";
+                 tag_resist = "Chord1";
+                 break;
+         }*/
     }
 	
 	// Update is called once per frame
@@ -92,10 +99,16 @@ public class AI_controller : MonoBehaviour {
         else if(other.tag == tag_resist) {
             health -= 1;
         }
-        else if (other.tag == "EnemyChord") {
-        }
-        else {
+        else if(other.tag == "Chord1" ||
+                other.tag == "Chord2" ||
+                other.tag == "Chord3" ||
+                other.tag == "Chord4" ||
+                other.tag == "Chord5" ||
+                other.tag == "Chord6" ||
+                other.tag == "Chord7") { 
             health -= 2;
+        }
+        else if (other.tag == "EnemyChord") {
         }
     }
 }
