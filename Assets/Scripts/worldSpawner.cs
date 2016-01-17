@@ -9,15 +9,20 @@ public class worldSpawner : MonoBehaviour {
 	public float y;
 	public float z;
 
+	public float wait;
+
+
 	void Start () {
 		StartCoroutine(SpawnShit());
 	}
 
 	IEnumerator SpawnShit () {
 		while (true) {
+
 			Vector3 spawnPosition = new Vector3(x, y, z);
 			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate(gameObj, spawnPosition, spawnRotation);
+			GameObject obj = (GameObject) Instantiate (gameObj, spawnPosition, spawnRotation);
+			yield return new WaitForSeconds (wait);
 		}
 	}
 }

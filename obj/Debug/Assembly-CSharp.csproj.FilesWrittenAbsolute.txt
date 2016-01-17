@@ -2,8 +2,6 @@
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/UnityEditor.dll
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/UnityEngine.Networking.dll
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/UnityEngine.UI.dll
-/Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
-/Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/Mono.Cecil.dll
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/Unity.SerializationLogic.dll
 /Users/cdiao/Documents/Unity/pajamaJam/Temp/bin/Debug/Unity.DataContract.dll
