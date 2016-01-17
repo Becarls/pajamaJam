@@ -26,10 +26,7 @@ public class worldSpawner : MonoBehaviour {
 		yield return new WaitForSeconds(startWait);
 
 		while (true) {
-<<<<<<< HEAD
 
-=======
->>>>>>> acdc8cad9ac1c2751290d0eb31adad8f4ded56db
             float z_value = Random.Range(position1, position1end);
             if (tree) {
                 z_value = spawnValues.z;
@@ -40,9 +37,5 @@ public class worldSpawner : MonoBehaviour {
 			//tree1.GetComponent<Rigidbody>().AddForce(new Vector3(speed, 0, 0));
 			yield return new WaitForSeconds(spawnWait);
 			}
-<<<<<<< HEAD
-
-=======
->>>>>>> acdc8cad9ac1c2751290d0eb31adad8f4ded56db
 	}
 }
