@@ -45,13 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\AI_controller.cs" />
-     <Compile Include="Assets\_Scripts\Chords.cs" />
-     <Compile Include="Assets\_Scripts\Spawner_logic.cs" />
-     <Compile Include="Assets\_Scripts\destroyByBoundary.cs" />
-     <Compile Include="Assets\_Scripts\playerMove.cs" />
-     <Compile Include="Assets\_Scripts\shooting.cs" />
-     <Compile Include="Assets\_Scripts\worldMove.cs" />
+     <Compile Include="Assets\Scripts\AI_controller.cs" />
+     <Compile Include="Assets\Scripts\chords.cs" />
+     <Compile Include="Assets\Scripts\destroyByBoundary.cs" />
+     <Compile Include="Assets\Scripts\playerMove.cs" />
+     <Compile Include="Assets\Scripts\shooting.cs" />
+     <Compile Include="Assets\Scripts\spawnerLogic.cs" />
+     <Compile Include="Assets\Scripts\worldSpawner.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
