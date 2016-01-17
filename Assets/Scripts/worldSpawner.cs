@@ -18,11 +18,11 @@ public class worldSpawner : MonoBehaviour {
 
 	IEnumerator SpawnShit () {
 		while (true) {
-
 			Vector3 spawnPosition = new Vector3(x, y, z);
 			Quaternion spawnRotation = Quaternion.identity;
 			GameObject obj = (GameObject) Instantiate (gameObj, spawnPosition, spawnRotation);
 			yield return new WaitForSeconds (wait);
 		}
+
 	}
 }
