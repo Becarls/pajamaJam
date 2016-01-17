@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Chords : MonoBehaviour {
+public class chords : MonoBehaviour {
     
     public float lifespan = 3f;
     public float speed = 250f;
