@@ -26,13 +26,19 @@ public class AI_controller : MonoBehaviour {
         rand_val = Random.value;
         weakness = (int)Mathf.Ceil((100f * rand_val) % 7f);
         GetComponent<Rigidbody>().AddForce(new Vector3(-speed, 0, 0));
-        if(gameObject.transform.position.z == -5) {
-            //enemyPos = 4;
+        if(gameObject.transform.position.z == -6) {
+            enemyPos = 1;
         }
-        else if (gameObject.transform.position.z == -5) {
-            //enemyPos = 4;
+        else if (gameObject.transform.position.z == -2) {
+            enemyPos = 2;
         }
-        /* switch (weakness) {
+        else if (gameObject.transform.position.z == 2) {
+            enemyPos = 3;
+        }
+        else if (gameObject.transform.position.z == 6) {
+            enemyPos = 4;
+        }
+         switch (type) {
              case 1:
                  tag_strong = "Chord1";
                  tag_resist = "Chord2";
@@ -61,7 +67,7 @@ public class AI_controller : MonoBehaviour {
                  tag_strong = "Chord7";
                  tag_resist = "Chord1";
                  break;
-         }*/
+         }
     }
 	
 	// Update is called once per frame
