@@ -90,6 +90,7 @@
 'Assets/Scripts/playerMove.cs'
 'Assets/Scripts/shooting.cs'
 'Assets/Scripts/spawnerLogic.cs'
+'Assets/Scripts/titleMove.cs'
 'Assets/Scripts/worldSpawner.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

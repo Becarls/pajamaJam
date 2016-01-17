@@ -77,7 +77,6 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:CROSS_PLATFORM_INPUT
-'Assets/Scripts/titleMove.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs'
