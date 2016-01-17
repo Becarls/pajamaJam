@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AI_controller.cs" />
+    <Compile Include="Assets\Scripts\bossAi.cs" />
     <Compile Include="Assets\Scripts\chords.cs" />
     <Compile Include="Assets\Scripts\destroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\floorMove.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="Assets\Scripts\shooting.cs" />
     <Compile Include="Assets\Scripts\spawnerLogic.cs" />
     <Compile Include="Assets\Scripts\worldSpawner.cs" />
-    <Compile Include="Assets\_Scripts\bossAi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
