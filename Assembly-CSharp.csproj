@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\playerMove.cs" />
      <Compile Include="Assets\Scripts\shooting.cs" />
      <Compile Include="Assets\Scripts\spawnerLogic.cs" />
+     <Compile Include="Assets\Scripts\wobble.cs" />
      <Compile Include="Assets\Scripts\worldSpawner.cs" />
      <Compile Include="Assets\bossBattle.cs" />
      <Compile Include="Assets\despawner.cs" />
