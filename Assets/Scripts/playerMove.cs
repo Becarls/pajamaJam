@@ -7,8 +7,9 @@ public class playerMove : MonoBehaviour {
 	public float movementSpeed = 2;
 	public float movementTime = 2;
 	public bool isMoving = false;
-
+    public int health = 4;
 	public int roadSize = 2000;
+    public AudioSource hurt;
 
 	void Start () {
 		rigidCube = this.GetComponent<Rigidbody>();
@@ -16,7 +17,11 @@ public class playerMove : MonoBehaviour {
 	}
 
 	void Update () {
-		if (isMoving) {
+        if(health <= 0) {
+            //DIE MOTHERFUCKER
+        }
+        transform.Translate(new Vector3(0,Mathf.Sin(Time.time * 40f), 0));
+        if (isMoving) {
 		}else{
 			if(Input.GetKeyDown(KeyCode.LeftArrow)){
 				if (playerPos == 0) {
@@ -35,4 +40,11 @@ public class playerMove : MonoBehaviour {
 			}
 		}
 	}
+
+    void OnTriggerEnter(Collider other) {
+        if(other.tag == "Enemy" || other.tag == "EnemyChord") {
+            health--;
+            hurt.Play();
+        }
+    }
 }
