@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\worldSpawner.cs" />
      <Compile Include="Assets\bossBattle.cs" />
      <Compile Include="Assets\despawner.cs" />
+     <Compile Include="Assets\gameController.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
