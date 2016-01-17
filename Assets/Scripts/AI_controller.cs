@@ -90,7 +90,7 @@ public class AI_controller : MonoBehaviour {
         }
 
         //random shoot
-        if(rand_val < .05 / weakness && tme >= delay) {
+        if(rand_val < .01 / weakness && tme >= delay) {
             Instantiate(enemyChord.transform, transform.position + new Vector3(offset, 0f, 0f), Quaternion.Euler(0, 0, 0f));
             tme = 0;
         }

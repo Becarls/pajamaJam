@@ -17,7 +17,7 @@ public class playerMove : MonoBehaviour {
 	void Update () {
 		if (isMoving) {
 		}else{
-			if(Input.GetKeyUp(KeyCode.LeftArrow)){
+			if(Input.GetKeyDown(KeyCode.LeftArrow)){
 				if (playerPos == 0) {
 				}else{
 					playerPos--;
@@ -25,7 +25,7 @@ public class playerMove : MonoBehaviour {
 				}
 			}
 
-			if(Input.GetKeyUp(KeyCode.RightArrow)){
+			if(Input.GetKeyDown(KeyCode.RightArrow)){
 				if (playerPos == 3) {
 				}else{
 				playerPos++;
