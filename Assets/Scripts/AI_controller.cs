@@ -14,6 +14,7 @@ public class AI_controller : MonoBehaviour {
     public float movement_prob = 40f;
     public int weakness;
     public int type;
+    public float wobbleSpeed = .01f;
 
     private string tag_resist;
     private string tag_strong;
@@ -72,6 +73,7 @@ public class AI_controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       // transform.rotation = Quaternion.Euler (0,0,Mathf.Sin(Time.time * wobbleSpeed));
         if (health <= 0)
             Destroy(gameObject);
         rand_val = Random.value;
