@@ -63,18 +63,6 @@
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -94,10 +82,11 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\AI_controller.cs" />
     <Compile Include="Assets\_Scripts\Chords.cs" />
-    <Compile Include="Assets\_Scripts\Spawner_logic.cs" />
+    <Compile Include="Assets\_Scripts\bossAi.cs" />
     <Compile Include="Assets\_Scripts\destroyByBoundary.cs" />
     <Compile Include="Assets\_Scripts\playerMove.cs" />
     <Compile Include="Assets\_Scripts\shooting.cs" />
+    <Compile Include="Assets\_Scripts\spawnerLogic.cs" />
     <Compile Include="Assets\_Scripts\worldMove.cs" />
   </ItemGroup>
   <ItemGroup>
