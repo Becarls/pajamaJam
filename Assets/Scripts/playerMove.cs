@@ -22,14 +22,18 @@ public class playerMove : MonoBehaviour {
         if(health <= 0) {
             //DIE MOTHERFUCKER
         }
+<<<<<<< HEAD
        // transform.Translate(new Vector3(0,Mathf.Sin(Time.time * 40f), 0));
+=======
+        //transform.Translate(new Vector3(0,Mathf.Sin(Time.time * 40f), 0));
+>>>>>>> 6e2c0eab9b7ce71851c70f6d5b3f6e408926d659
         if (isMoving) {
 		}else{
 			if(Input.GetKeyDown(KeyCode.LeftArrow)){
 				if (playerPos == 0) {
 				}else{
 					playerPos--;
-					this.transform.Translate(new Vector3(0,0,-1 * movementTime * movementSpeed));
+					this.transform.Translate(new Vector3(-4,0,0 * movementTime * movementSpeed));
 				}
 			}
 
@@ -37,7 +41,7 @@ public class playerMove : MonoBehaviour {
 				if (playerPos == 3) {
 				}else{
 				playerPos++;
-				this.transform.Translate(new Vector3(0, 0, 1 * movementTime * movementSpeed));
+				this.transform.Translate(new Vector3(4, 0, 0 * movementTime * movementSpeed));
 				}
 			}
 		}
