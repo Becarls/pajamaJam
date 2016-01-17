@@ -26,16 +26,7 @@ public class worldSpawner : MonoBehaviour {
 		yield return new WaitForSeconds(startWait);
 
 		while (true) {
-<<<<<<< HEAD
-			float z_value = Random.Range(position1, position1end);
-			Debug.Log(z_value);
-			Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, z_value);
-			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate(tree1, spawnPosition, spawnRotation);
-			tree1.GetComponent<Rigidbody>().AddForce(new Vector3(speed, 0, 0));
-			yield return new WaitForSeconds(spawnWait);
-		}
-=======
+
             float z_value = Random.Range(position1, position1end);
             if (tree) {
                 z_value = spawnValues.z;
@@ -46,6 +37,6 @@ public class worldSpawner : MonoBehaviour {
 			//tree1.GetComponent<Rigidbody>().AddForce(new Vector3(speed, 0, 0));
 			yield return new WaitForSeconds(spawnWait);
 			}
->>>>>>> origin/master
+
 	}
 }
