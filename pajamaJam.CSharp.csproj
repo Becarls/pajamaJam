@@ -83,9 +83,12 @@
     <Compile Include="Assets\ChangeMusic.cs" />
     <Compile Include="Assets\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\AI_controller.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\LoadAdditive.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\bossAi.cs" />
+=======
+>>>>>>> parent of acdc8ca... ?
     <Compile Include="Assets\Scripts\chords.cs" />
     <Compile Include="Assets\Scripts\destroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\floorMove.cs" />
@@ -94,6 +97,7 @@
     <Compile Include="Assets\Scripts\spawnerLogic.cs" />
     <Compile Include="Assets\Scripts\titleMove.cs" />
     <Compile Include="Assets\Scripts\worldSpawner.cs" />
+    <Compile Include="Assets\_Scripts\bossAi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
