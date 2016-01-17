@@ -5,8 +5,6 @@
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -define:UNITY_5_3_1
 -define:UNITY_5_3
@@ -79,6 +77,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:CROSS_PLATFORM_INPUT
+'Assets/Scripts/titleMove.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs'
 'Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs'
@@ -121,7 +120,6 @@
 'Assets/Standard Assets/Utility/SmoothFollow.cs'
 'Assets/Standard Assets/Utility/TimedObjectActivator.cs'
 'Assets/Standard Assets/Utility/TimedObjectDestructor.cs'
-'Assets/Standard Assets/Utility/TitleMove.cs'
 'Assets/Standard Assets/Utility/WaypointCircuit.cs'
 'Assets/Standard Assets/Utility/WaypointProgressTracker.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
