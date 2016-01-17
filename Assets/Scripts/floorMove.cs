@@ -3,15 +3,17 @@ using System.Collections;
 
 public class floorMove : MonoBehaviour {
 
-    // Use this for initialization
-    public float lifespan = 3f;
-    public float speed = 250f;
-    // public ParticleSystem explosion;
-    void Start() { 
+	public float xDir;
+	public float yDir;
+	public float zDir;
+    public float lifespan;
+    public float speed;
+
+	void Start() { 
         Destroy(gameObject, lifespan);
     }
 
     void Update() {
-        transform.Translate(speed * Time.deltaTime,0,0);
+		transform.Translate (new Vector3(xDir, yDir, zDir) * Time.deltaTime * speed);
     }
 }

@@ -3,39 +3,26 @@ using System.Collections;
 
 public class worldSpawner : MonoBehaviour {
 
-	public GameObject tree1;
+	public GameObject gameObj;
 
-	public float speed;
+	public float x;
+	public float y;
+	public float z;
 
-	public float position1;
-	public float position1end;
+	public float wait;
 
-	public float spawnWait;
-	public float startWait;
-	public float waveWait;
-
-	public Vector3 spawnValues;
-    public bool tree = false;
 
 	void Start () {
 		StartCoroutine(SpawnShit());
-
 	}
-	
+
 	IEnumerator SpawnShit () {
-		yield return new WaitForSeconds(startWait);
-
 		while (true) {
-
-            float z_value = Random.Range(position1, position1end);
-            if (tree) {
-                z_value = spawnValues.z;
-            }
-			Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, z_value);
+			Vector3 spawnPosition = new Vector3(x, y, z);
 			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate(tree1, spawnPosition, spawnRotation);
-			//tree1.GetComponent<Rigidbody>().AddForce(new Vector3(speed, 0, 0));
-			yield return new WaitForSeconds(spawnWait);
-			}
+			GameObject obj = (GameObject) Instantiate (gameObj, spawnPosition, spawnRotation);
+			yield return new WaitForSeconds (wait);
+		}
+
 	}
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/conrad_scene.unity
+- path: Assets/Scenes/conrad_scene.unity
   isLoaded: 1
   isActive: 1
