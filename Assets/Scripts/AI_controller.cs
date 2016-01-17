@@ -26,7 +26,7 @@ public class AI_controller : MonoBehaviour {
         tme = delay;
         rand_val = Random.value;
         weakness = (int)Mathf.Ceil((100f * rand_val) % 7f);
-        GetComponent<Rigidbody>().AddForce(new Vector3(-speed, 0, 0));
+        GetComponent<Rigidbody>().AddForce(new Vector3(-speed * 5f, 0, 0));
         if(gameObject.transform.position.z == -6) {
             enemyPos = 1;
         }
@@ -92,7 +92,7 @@ public class AI_controller : MonoBehaviour {
         }
 
         //random shoot
-        if(rand_val < .01 / weakness && tme >= delay) {
+        if(rand_val < .07 / weakness && tme >= delay) {
             Instantiate(enemyChord.transform, transform.position + new Vector3(offset, 0f, 0f), Quaternion.Euler(0, 0, 0f));
             tme = 0;
         }

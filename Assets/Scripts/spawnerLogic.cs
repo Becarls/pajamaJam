@@ -53,8 +53,10 @@ public class spawnerLogic : MonoBehaviour {
                 }
                 yield return new WaitForSeconds(spawnWait);
             }
+            spawnWait -= .1f;
             hazardCount++;
             yield return new WaitForSeconds(waveWait);
+            waveWait -= .3f;
         }
     }
 }

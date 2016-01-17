@@ -10,8 +10,10 @@ public class playerMove : MonoBehaviour {
     public int health = 4;
 	public int roadSize = 2000;
     public AudioSource hurt;
+    public AudioSource intro;
 
 	void Start () {
+        intro.Play();
 		rigidCube = this.GetComponent<Rigidbody>();
         gameObject.GetComponent<AudioSource>().Play();
 	}
@@ -20,7 +22,7 @@ public class playerMove : MonoBehaviour {
         if(health <= 0) {
             //DIE MOTHERFUCKER
         }
-        transform.Translate(new Vector3(0,Mathf.Sin(Time.time * 40f), 0));
+       // transform.Translate(new Vector3(0,Mathf.Sin(Time.time * 40f), 0));
         if (isMoving) {
 		}else{
 			if(Input.GetKeyDown(KeyCode.LeftArrow)){
